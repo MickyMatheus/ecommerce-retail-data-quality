@@ -1,0 +1,7 @@
+Check,Result
+Unique source identifiers,PASSED
+All final records traceable,PASSED
+Expected overlap excluded,PASSED
+Original business values preserved,PASSED
+Original numerical values preserved,PASSED
+Expected final row count,PASSED

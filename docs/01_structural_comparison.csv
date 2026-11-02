@@ -1,0 +1,9 @@
+Metric,Original,Final_V2
+Total records,1067371.0,1044848.0
+Original business columns,8.0,8.0
+All working columns,10.0,34.0
+Missing cells (original 8 columns),247389.0,239562.0
+Exact duplicate extra occurrences,34335.0,11812.0
+Duplicate occurrence rate (%),3.22,1.13
+Missing Customer IDs,243007.0,235287.0
+Missing Descriptions,4382.0,4275.0

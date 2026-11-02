@@ -1,0 +1,35 @@
+Column,Data_Type,Origin,Description,Missing_Values,Missing_Rate_Pct
+Invoice,string,Original business field,Original invoice identifier,0,0.0
+StockCode,string,Original business field,Original product or operation code,0,0.0
+Description,string,Original business field,Original product or operation description,4275,0.41
+Quantity,int64,Original business field,Recorded transaction quantity,0,0.0
+InvoiceDate,datetime64[ns],Original business field,Original invoice date and time,0,0.0
+Price,float64,Original business field,Recorded unit price,0,0.0
+Customer ID,string,Original business field,Original customer identifier,235287,22.52
+Country,object,Original business field,Recorded customer country,0,0.0
+_source_sheet,object,Source traceability,Original Excel worksheet,0,0.0
+_source_row,int64,Source traceability,Original Excel row number,0,0.0
+DQ_Missing_Customer,bool,Derived quality / analytical field,Customer ID is missing,0,0.0
+DQ_Missing_Description,bool,Derived quality / analytical field,Description is missing,0,0.0
+DQ_Cancellation,bool,Derived quality / analytical field,Invoice has cancellation prefix C,0,0.0
+DQ_Negative_Qty_Without_C,bool,Derived quality / analytical field,Negative quantity without C prefix,0,0.0
+DQ_C_With_Nonnegative_Qty,bool,Derived quality / analytical field,C invoice with nonnegative quantity,0,0.0
+DQ_Zero_Price,bool,Derived quality / analytical field,Recorded unit price equals zero,0,0.0
+DQ_Negative_Price,bool,Derived quality / analytical field,Recorded unit price is negative,0,0.0
+DQ_Special_StockCode,bool,Derived quality / analytical field,Code belongs to the special-operation list,0,0.0
+DQ_Any_Flag,bool,Derived quality / analytical field,At least one basic DQ condition is flagged,0,0.0
+transaction_class,string,Derived quality / analytical field,Provisional transaction category,0,0.0
+LineAmount_Recorded,float64,Derived quality / analytical field,Quantity multiplied by recorded price,0,0.0
+Description_Suggested,string,Derived quality / analytical field,Unconfirmed description recovery suggestion,1042185,99.75
+Description_Recovery_Status,string,Derived quality / analytical field,Description recovery assessment status,0,0.0
+Outlier_Eligible,boolean,Derived quality / analytical field,Eligible for statistical outlier detection,0,0.0
+Outlier_IQR_Quantity,boolean,Derived quality / analytical field,Quantity outlier using IQR,25194,2.41
+Outlier_MAD_Quantity,boolean,Derived quality / analytical field,Quantity outlier using log1p Modified Z-Score,25194,2.41
+Outlier_IQR_Price,boolean,Derived quality / analytical field,Unit price outlier using IQR,25194,2.41
+Outlier_MAD_Price,boolean,Derived quality / analytical field,Unit price outlier using log1p Modified Z-Score,25194,2.41
+Outlier_IQR_LineAmount,boolean,Derived quality / analytical field,Line amount outlier using IQR,25194,2.41
+Outlier_MAD_LineAmount,boolean,Derived quality / analytical field,Line amount outlier using log1p Modified Z-Score,25194,2.41
+Outlier_IQR_Any,boolean,Derived quality / analytical field,Outlier in at least one IQR variable,25194,2.41
+Product_Price_Anomaly,boolean,Derived quality / analytical field,Price differs substantially from product median,44683,4.28
+Product_Price_Ratio,Float64,Derived quality / analytical field,Observed price divided by product median,44683,4.28
+Product_Identity_Review,boolean,Derived quality / analytical field,Product code has multiple observed descriptions,44683,4.28

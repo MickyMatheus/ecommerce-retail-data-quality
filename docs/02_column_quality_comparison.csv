@@ -1,0 +1,9 @@
+Column,Original_Type,Final_Type,Original_Missing,Final_Missing,Original_Unique,Final_Unique,Original_Missing_Pct,Final_Missing_Pct,Change_Pct_Points
+Invoice,string,string,0,0,53628,53628,0.0,0.0,0.0
+StockCode,string,string,0,0,5305,5305,0.0,0.0,0.0
+Description,object,string,4382,4275,5698,5698,0.41,0.41,0.0
+Quantity,int64,int64,0,0,1057,1057,0.0,0.0,0.0
+InvoiceDate,datetime64[ns],datetime64[ns],0,0,47635,47635,0.0,0.0,0.0
+Price,float64,float64,0,0,2807,2807,0.0,0.0,0.0
+Customer ID,string,string,243007,235287,5942,5942,22.77,22.52,-0.25
+Country,object,object,0,0,43,43,0.0,0.0,0.0

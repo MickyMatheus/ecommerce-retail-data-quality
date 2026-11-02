@@ -1,0 +1,8 @@
+Metric,Records,Evaluated_Records,Rate_Pct
+Records with at least one DQ flag,256345,1044848,24.53
+Missing Customer ID,235287,1044848,22.52
+Missing Description,4275,1044848,0.41
+Description recovery suggestions,2663,4275,62.29
+Potential IQR outliers (any variable),164870,1019654,16.17
+Potential product price anomalies,15855,1000165,1.59
+Product identity review lines,238803,1000165,23.88

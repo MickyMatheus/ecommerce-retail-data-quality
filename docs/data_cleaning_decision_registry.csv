@@ -1,0 +1,9 @@
+Rule_ID,Issue,Action,Status,Validation
+DQ-001,Cross-worksheet historical overlap,Retain one copy of the shared historical interval,Approved,Verify identical signatures and multiplicities
+DQ-002,Within-worksheet duplicate candidates,Preserve and flag for investigation,Approved,No automatic removal of repeated invoice lines
+DQ-003,Missing Customer ID,Preserve missing values and add missingness flag,Approved,Original customer identifiers remain unchanged
+DQ-004,Missing product descriptions,Store suggestions separately from original values,Approved,Original descriptions remain unchanged
+DQ-005,Cancellation and adjustment transactions,Assign provisional business categories,Pending business validation,Preserve original quantities and prices
+DQ-006,Zero and negative unit prices,Preserve and classify for business review,Approved,No automatic replacement or removal
+DQ-007,Statistical outliers,Preserve and maintain anomaly indicators,Approved,No automatic outlier removal or capping
+DQ-008,Product identity and pricing inconsistencies,Maintain exceptions for investigation,Pending business validation,Preserve original product codes and prices
